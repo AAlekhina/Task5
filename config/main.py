@@ -1,6 +1,6 @@
 import psycopg2
 
-# Подключение к локальной базе данных PostgreSQL
+## Подключение к локальной базе данных PostgreSQL
 conn = psycopg2.connect(
     dbname = 'task4',
     user = 'postgres',
