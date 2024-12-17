@@ -14,28 +14,21 @@ We have a lot of country departments. Every department is responsible for some c
 
 # Description of the repository
  This project contains the following working files:
- - folder that contains a working file
-   - conf_db.py - file with configuration settings
+ - config 
+   - mail.py - file for configuring access to PostgreSQL
+ - data_ingestion
+   - Load_from_excel - loading data from Excel into Python
+ - data_processing
+   - data_processing.jpynb - cleaning and processing data in Python
+ - data_upload_postgres
+   - data_upload_postgres.jpynb - loading processed data into PostgreSQL
+ - source -  folder that contains files with the data
+ - sql - folder that contains SQL queries
+   - Company.sql
+   - copy_into_csv.sql
+   - create_schema_import.sql
+   - create_datamart.sql
+   - import_sql
+ - visualisation - Tableau dashboard
+   - FiD.twbx
 
-
-config.json - configuration for database in json file
-logg - folder that contains setup for logging
-logger_setup.py - file with setup
-debug.log - log file that saves log messages
-logging_conf.yml - configuration for logging
-modules - folder that contains classes that operate within database
-base_etl_class.py - abstraction class for ETL class
-etl.py - conduction of ETL process considering creation the schema with tables in database
-postgresdb.py - postgres class that contains ETL functions
-queries - folder that contains SQL queries
-query_age_diff.sql
-query_gender.sql
-query_list_of_rooms.sql
-query_lowest_avg_age.sql
-query_select_rooms.sql
-query_select_students.sql
-schema.sql - query to create the schema and tables in database
-source - folder that contains files with the data
-input_data - folder that contains input data
-rooms.json - json with the information about rooms
-students.json - json with the information about rooms
