@@ -1,5 +1,4 @@
-# Task 3.  Financial dashboard
-This project is for educational purposes only
+# ConstructCapitalInsights
 ***
 ### Description of the task
 
